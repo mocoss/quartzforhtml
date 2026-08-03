@@ -3,7 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   push:
     branches:
-      - master # 如果你的主分支叫 main，请改为 main
+      - main # 如果你的主分支是其他，请改为 相应分支
 
 permissions:
   contents: read
@@ -53,8 +53,5 @@ jobs:
           path: . # 上传当前目录（即刚才下载的 artifact）
       - name: Deploy to GitHub Pages
         id: deployment
-<<<<<<< HEAD
         uses: actions/deploy-pages@v4
-=======
-        uses: actions/deploy-pages@v4
->>>>>>> origin/master
+
