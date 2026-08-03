@@ -3,7 +3,7 @@ name: Deploy Quartz site to GitHub Pages
 on:
   push:
     branches:
-      - main # 如果你的主分支是其他，请改为 相应分支
+      - main # 如果你的主分支是其他，请改为相应分支
 
 permissions:
   contents: read
